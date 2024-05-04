@@ -96,7 +96,7 @@ class Bowls(models.Model):
         constraints = [
             UniqueConstraint(
                 Lower('name'),
-                name='cones_case_insensitive_unique',
+                name='bowls_case_insensitive_unique',
                 violation_error_message = "Bowls already exists (case insensitive match)"
             ),
         ]
